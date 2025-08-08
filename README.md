@@ -34,4 +34,5 @@ Building applications with vector databases
 
         outputs_flat = decoder_flat(z_flat)
        ```
-       
+
+2. A simple vector search using the Weaviate Database to create a vector-based collection, add data to it, and perform vector similarity searches which is configured to use cosine distance for similarity.

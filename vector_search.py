@@ -1,10 +1,11 @@
 import weaviate, json
 from weaviate.classes.config import Configure, Property, DataType
 from weaviate.collections.classes.config_vectorizers import VectorDistances
+from weaviate.collections.classes.config_vectorizers import Text2VecOpenAI
 
 
 client = weaviate.connect_to_embedded(version="1.30.5")
-print(f"YESSSSSSS{client.is_ready()}")
+print(client.is_ready())
 
 # Create a collection with the vectorizer configured to use cosine distance
 client.collections.delete("MyCollection")
